@@ -1,0 +1,309 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* 
+Core  Colors:
+- lightest pink: #fff0f3
+- super light pink: #ffcfd9
+- light pink: #ffb3c1
+- light medium pink: #ff8fa3
+- medium pink: #ff758f
+- bright pink: #ff4d6d
+- medium dark pink: #c9184a
+- darker pink: #a4133c
+- dark pink: #800f2f
+-darkest pink: #640c25
+
+Yes, I'm a pink-loving girly girl. :P
+*/
+
+html{
+scroll-behavior: smooth;
+}
+
+/*Navigation*/
+nav {
+display:flex;
+justify-content: flex-start;
+align-items: center;
+background: linear-gradient(90deg, #a4133c, #ff758f);
+border-bottom: 0.5rem solid transparent;
+border-image: linear-gradient(to right, #ff758f, #a4133c) 1;
+padding: 1.25rem;
+position: fixed;
+top: 0;
+width:100%;
+margin-left: -0.5rem;
+}
+
+nav a {
+color: #fff0f3;
+text-decoration: none;
+margin: 0 1rem;
+padding: 0.5rem 0.5rem 0.3rem 0.5rem;
+border-radius: 6px;
+transition: background 0.3s, transform 0.3s;
+font-weight:500;
+font-family: "Indie Flower", cursive;
+font-size: 22px;
+}
+
+nav a:hover {
+background: #fff0f3;
+color:#a4133c;
+transform: scale(1.05);
+box-shadow: 6px 3px 6px 3px #a4133c;
+font-family: "Indie Flower", cursive;
+}
+
+nav a.active {
+background:#800f2f;
+}
+
+.home-button {
+background: none;
+padding: 0;
+margin-right: 0rem;
+max-width: 100%;
+}
+
+.home-button img {
+width: 370px;
+height:75px;
+vertical-align: middle;
+
+}
+
+.home-button:hover img {
+transform: scale(1.01);
+box-shadow: none;
+
+}
+
+.home-button:hover {
+background: none;
+color: inherit;
+box-shadow: none;
+transform: scale(1.01);
+}
+/*Navigation*/
+
+/*Fonts and Text*/
+.indie-flower-regular {
+font-family: "Indie Flower", cursive;
+font-weight: 400;
+font-style: normal;
+}
+
+.inter{
+font-family: "Inter", sans-serif;
+font-optical-sizing: auto;
+}
+
+h1{
+font-family:"Inter", sans-serif;
+font-weight: 600;
+font-size:24px;
+color: #a4133c;
+margin-bottom: -0.1rem;
+}
+
+h2 {
+font-family:"Inter", sans-serif;
+font-weight: 500;
+font-size:18px;
+color: #a4133c;
+margin-top: 1.75rem;
+}
+
+p {
+font-family:"Inter", sans-serif;
+font-weight: 400;
+font-size: 14px;
+color: #640c25;
+}
+
+p2{
+font-family:"Inter", sans-serif;
+font-weight: 400;
+font-size: 14px;
+color: #fff0f3;
+display: flex;
+flex-direction: column;
+line-height: 1.6;
+margin-left:1rem;
+}
+
+ol {
+padding-left: 2rem;
+color: #640c25;
+font-family:"Inter", sans-serif;
+line-height: 1.5;
+}
+
+ul {
+list-style: none;
+padding-left: 2rem;
+color: #640c25;
+font-family:"Inter", sans-serif;
+line-height: 1.5;
+}
+
+ul li::before{
+content:"✦︎   ";
+color: #640c25;
+font-family:"Inter", sans-serif;
+}
+
+li {
+font-weight: 500;
+}
+
+.nested-list-item::before{
+content:"⟡   ";
+color: #640c25;
+font-family:"Inter", sans-serif;
+}
+
+.nested-list-item{
+font-weight:400;
+}
+
+.link {
+color: #640c25;
+text-decoration: underline;
+transition: all 0.3s ease;
+}
+
+.link:hover {
+color: #ff4d6d;
+text-decoration: underline;
+}
+
+.link:active {
+color: #ff4d6d;
+}
+/*Fonts and Text*/
+
+/*Body*/
+body{
+margin-top: 9rem;
+background-size: cover;
+}
+
+.indexbg {
+background-image:url("index_background.png");
+background-size:cover;
+background-position: center; 
+}
+
+.careerbg {
+background-image:url("career_background.png");
+background-size:cover;
+background-position: center; 
+}
+
+.personalbg {
+background-image:url("personal_background.png");
+background-size:cover;
+background-position: center; 
+}
+
+.leisurebg {
+background-image:url("leisure_background.png");
+background-size:cover;
+background-position:left;
+}
+
+section {
+
+}
+
+.text-box {
+margin:0 auto;
+background: #fff0f3;
+width: 60%;
+max-width: 50rem;
+height:auto;  
+padding: 30px;
+border-radius: 12px;
+box-shadow: 2px 2px 5px 2px #a4133c;
+text-align: left;
+}
+/*Body*/
+
+/*Table*/
+table {
+border-collapse: separate;
+border-spacing: 0;
+width: 100%;
+margin: 2rem auto;
+margin-top:-0.1rem;
+margin-bottom: 2.5rem;
+border-radius: 8px;
+overflow: hidden;
+font-family: "Inter", sans-serif;
+text-align: left;
+box-shadow: 0 3px 8px #d3d3d3;
+}
+
+td, th {
+border: 1px solid rgba(0, 0, 0, 0.1);
+padding: 8px;
+width:75%;
+}
+
+.complete-table {
+background-color: #e8f5e9;
+border: 3px solid #43a047;
+color: #1b5e20;
+}
+
+.complete-table th {
+background-color: #d0ebd2;
+}
+
+.in-progress-table {
+background-color: #fff9e6;
+border: 3px solid #fbc02d;
+color: #5d4037; 
+}
+
+.in-progress-table th {
+background-color: #fff2cc; 
+}
+
+.to-do-table {
+background-color: #fff3e0;
+border: 3px solid #fb8c00;
+color: #4e342e;
+}
+
+.to-do-table th {
+background-color: #ffe0b2;
+}
+/*Table*/
+
+img {
+width:50rem;
+max-width: 100%
+}
+
+footer {
+background: linear-gradient(90deg, #a4133c, #ff758f); 
+border-top: 0.5rem solid transparent;
+border-image: linear-gradient(to right, #ff758f, #a4133c) 1;
+text-align: left;
+padding: 2rem 1rem;
+font-size: 0.95rem;
+width:100%;
+margin-left: -0.5rem;
+margin-bottom: -0.5rem;
+margin-top: 2rem;
+}
+
+
+
+
+
+
